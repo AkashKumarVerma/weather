@@ -1,0 +1,240 @@
+@font-face {
+	font-family: raleway;
+	src: url('fonts/raleway.ttf');
+}
+@font-face {
+	font-family: oswald;
+	src: url('fonts/Oswald-Light.ttf');
+}
+
+@font-face {
+	font-family: lalezar;
+	src: url('fonts/Lalezar-Regular.ttf');
+}
+
+@font-face {
+	font-family: amatic;
+	src: url('fonts/AmaticSC-Bold.ttf');
+}
+
+@font-face {
+	font-family: anton;
+	src: url('fonts/Anton.ttf');
+}
+body {
+	background-color: #fbfbfb;
+}
+
+/********************
+
+	   -GLOBAL-
+
+*********************/
+
+nav {
+	width: 100%;
+	background-color: #f54039;
+}
+
+
+/*******************************************
+
+	-FOR SCREEN SIZE LESS THAN 400px-
+
+*******************************************/
+
+@media all and (min-width: 200px) and (max-width: 400px) {
+
+	.layout-container {
+		width: 90%;
+		height: auto;
+		margin: 0 auto;
+	}
+
+
+	/** LOCATION **/
+	.location {
+		display: block;
+		background-color: #f35656;
+		padding: 7% 5%;
+		border-bottom-style: solid;
+		border-bottom-width: 5px;
+		border-bottom-color: #c94545;
+	}
+
+	.location-city {
+		display: inline-block;
+		color: #ffffff;
+		font-family: raleway;
+		font-weight: 800;
+		font-size: 30px;
+	}
+
+	.location-country {
+		display: inline-block;
+		color: #fbfbfb;
+		font-family: lalezar;
+		margin-left: 5%;
+		font-weight: 400;
+		font-size: 17px;
+	}
+
+/*
+	.location-change {
+		float: right;
+		height: 30px;
+		width: 75px;
+		border-bottom-style: solid;
+		border-bottom-width: 4px;
+		border-bottom-color: #065b90;
+		margin-right: 1.25%;
+		margin-top: 1%;
+		color: #ffffff;
+		font-family: oswald;
+		font-size: 15px;
+		line-height: 32px;
+		letter-spacing: 1px;
+		text-align: center;
+		background-color: #0078d7; 
+		cursor: pointer;
+		font-weight: 400;
+	}
+	*/
+
+	/** WEEKDAY CAROUSEL **/
+	.day {
+		padding: 5% 5%;
+	}
+
+	.day-name {
+		float: left;
+		color: #03d6ac;
+		font-family: raleway;
+		font-size: 20px;
+		font-weight: 800;
+		margin-top: 6px;
+	}
+
+	.day-temp {
+		float: right;
+		font-family: anton;
+		font-size: 18px;
+		font-weight: 400;
+		margin-top: 6px;
+	}
+
+	.btn-scale-change {
+		float: right;
+		margin-left: 10%;
+		height: auto;
+		width: 40px;
+		text-align: center;
+		color: #000;
+		font-family: raleway;
+		font-size: 18px;
+		line-height: 30px;
+		font-weight: bold;
+		background-color: #fbfbfb;
+		border-style: solid;
+		border-width: 1px;
+		border-color: #f35656;
+		cursor: pointer;
+	}
+
+	.btn-scale-change:hover {
+		background-color: #ed7070;
+		color: #fff;
+	}
+	.icon > img {
+		display: block;
+		margin: 0 auto;
+		width: 200px;
+		height: auto;
+	}
+
+	.micilanious {
+		background-color: #f35656;
+		border-bottom-style: solid;
+		border-bottom-width: 5px;
+		border-bottom-color: #c94545;
+		margin: 5% auto;
+	}
+
+	.forecast {
+		background-color: #f35656;
+		border-bottom-style: solid;
+		border-bottom-width: 5px;
+		border-bottom-color: #c94545;
+	}
+}
+
+
+
+@media all and (min-width: 1000px) {
+
+	.layout-container {
+		width: 90%;
+		height: auto;
+		margin: 0 auto;
+		border-radius: 2px;
+	}
+
+
+	/** LOCATION **/
+	.location {
+		display: block;
+		background-color: #f35656;
+		padding: 3% 5%;
+		border-bottom-style: solid;
+		border-bottom-width: 5px;
+		border-bottom-color: #c94545;
+	}
+
+	.location-container {
+		margin: 0 auto;
+		height: auto;
+		width: 300px;
+	}
+
+	.location-city {
+		display: inline-block;
+		color: #ffffff;
+		font-family: raleway;
+		font-weight: 800;
+		font-size: 45px;
+	}
+
+	.location-country {
+		display: inline-block;
+		color: #fbfbfb;
+		font-family: lalezar;
+		margin-left: 30px;
+		font-weight: 400;
+		font-size: 20px;
+	}
+
+	.weekday-container {
+		margin: 0 auto;
+		height: auto;
+		width: 300px;
+	}
+	.weekday {
+		height: auto;
+		width: auto;
+		color: #ffffff;
+		font-family: raleway;
+		font-size: 20px;
+		font-weight: 400;
+		margin-top: 30px;
+		margin-left: 20px;
+	}
+
+
+	.icon {
+		height: auto;
+		margin: 0 auto;
+		min-width: 330px;
+		max-width: 330px;
+		background-size: contain;
+	}
+}

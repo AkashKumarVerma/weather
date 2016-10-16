@@ -1,0 +1,87 @@
+
+<lastupdate/>
+ <calctime>0.6543</calctime>
+ <nextupdate/>
+</meta>
+<sun rise="2015-06-30T10:08:46" set="2015-07-01T01:06:20"/>
+<forecast>
+    <time from="2015-06-30T09:00:00" to="2015-06-30T12:00:00">
+        <symbol number="500" name="light rain" var="10n"/>
+        <precipitation value="5%" unit="3h" type="rain"/>
+        <windDirection deg="253.5" code="WSW" name="West-southwest"/>
+        <windSpeed mps="4.9" name="Gentle Breeze"/>
+        <temperature unit="celsius" value="16.89" min="16.89" max="17.375"/>
+        <pressure unit="hPa" value="989.51"/>
+        <humidity value="96" unit="%"/>
+        <clouds value="broken clouds" all="64" unit="%"/>
+    </time>
+    <time from="2015-06-30T12:00:00" to="2015-06-30T15:00:00">
+        <symbol number="500" name="light rain" var="10d"/>
+        <precipitation value="99%" unit="3h" type="rain"/>
+        <windDirection deg="248.001" code="WSW" name="West-southwest"/>
+        <windSpeed mps="4.86" name="Gentle Breeze"/>
+        <temperature unit="celsius" value="17.23" min="17.23" max="17.614"/>
+        <pressure unit="hPa" value="991.29"/>
+        <humidity value="97" unit="%"/>
+        <clouds value="scattered clouds" all="44" unit="%"/>
+    </time>
+
+    ...<br />
+
+</forecast>
+</weatherdata>
+
+Parameters:
+
+    location
+        location.name City ID
+        location.type Prototype parameter
+        location.country Country code (GB, JP etc.)
+        location.timezone Prototype parameter
+        location.location
+            location.location.altitude City geo location, altitude above the sea level
+            location.location.latitude City geo location, latitude
+            location.location.longitude City geo location, longitude
+            location.location.geobase Prototype parameter
+            location.location.geobaseid Prototype parameter
+    meta
+        meta.lastupdate Prototype parameter
+        meta.calctime Speed of data calculation
+        meta.nextupdate Prototype parameter
+    sun
+        sun.rise Sunrise time
+        sun.set Sunset time
+    forecast
+        forecast.time
+            forecast.time.from Beginning of the period of data forecasted
+            forecast.time.to End of the period of data forecasted
+        forecast.symbol
+            forecast.symbol.number Weather condition id
+            forecast.symbol.name Weather condition
+            forecast.symbol.var Weather icon id
+        forecast.precipitation
+            forecast.precipitation.value Precipitation volume for the last 3 hours, mm
+            forecast.precipitation.unit Period of measurements. Possilbe value is 1 hour, 3 hours.
+            forecast.precipitation.type Type of precipitation. Possible value is rain, snow.
+        forecast.windDirection
+            forecast.windDirection.deg Wind direction, degrees (meteorological)
+            forecast.windDirection.code Code of the wind direction. Possilbe value is WSW, N, S etc.
+            forecast.windDirection.name Full name of the wind direction.
+        forecast.windSpeed
+            forecast.windSpeed.mps Wind speed, mps
+            forecast.windSpeed.name Type of the wind
+        forecast.temperature
+            forecast.temperature.unit Unit of measurements. Possilbe valure is Celsius, Kelvin, Fahrenheit.
+            forecast.temperature.value Temperature
+            forecast.temperature.min Minimum temperature at the moment of calculation. This is deviation from 'temp' that is possible for large cities and megalopolises geographically expanded (use these parameter optionally).
+            forecast.temperature.max Maximum temperature at the moment of calculation. This is deviation from 'temp' that is possible for large cities and megalopolises geographically expanded (use these parameter optionally).
+        forecast.pressure
+            forecast.pressure.unit hPa
+            forecast.pressure.value Pressure value
+        forecast.humidity
+            forecast.humidity.unit %
+            forecast.humidity.value Humidity value
+        forecast.clouds
+            forecast.pressure.value Name of the cloudiness
+            forecast.pressure.all Cloudiness
+            forecast.pressure.unit %
